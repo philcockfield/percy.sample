@@ -1,0 +1,31 @@
+{
+  "name": "percy.sample",
+  "version": "1.0.0",
+  "description": "Sample of Percy using React",
+  "main": "./lib/index.js",
+  "typings": "./lib/index.d.ts",
+  "scripts": {
+    "ui": "./node_modules/@kadira/storybook/dist/server/index.js -p 3030 -c ./.storybook -s ./public",
+    "start": "node .",
+    "watch": "nodemon . -e js --ignore src",
+    "test": "sh sh/test.sh",
+    "tdd": "yarn run test -- --reporter min --watch",
+    "lint": "tslint 'src/**/*.ts{,x}' --format verbose",
+    "build": "rm -rf ./lib && tsc",
+    "prepublish": "yarn run lint && yarn test && yarn run build",
+    "snapshot": "build-storybook && percy-storybook --debug"
+  },
+  "dependencies": {
+    "@tdb/util": "^1.0.72"
+  },
+  "devDependencies": {
+    "@percy-io/react-percy-storybook": "^0.1.6",
+    "@tdb/typescript": "^2.2.0",
+    "@tdb/ui.test": "^2.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "__GITHUB_URL__"
+  },
+  "license": "UNLICENSED"
+}
