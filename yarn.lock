@@ -14,7 +14,7 @@
     json-stringify-safe "^5.0.1"
     react-inspector "^1.1.0"
 
-"@kadira/storybook-addon-knobs@1.7.1", "@kadira/storybook-addon-knobs@^1.7.1":
+"@kadira/storybook-addon-knobs@1.7.1":
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/@kadira/storybook-addon-knobs/-/storybook-addon-knobs-1.7.1.tgz#5c6278c2c67652408358a7ee49e789fd1396b831"
   dependencies:
@@ -150,20 +150,7 @@
     tslint-react "2.6.0"
     typescript "2.2.2"
 
-"@tdb/ui.test@^2.0.4":
-  version "2.0.18"
-  resolved "https://registry.yarnpkg.com/@tdb/ui.test/-/ui.test-2.0.18.tgz#bfa3fe5225c2fe91df9be0737aa7c577ef9b42ce"
-  dependencies:
-    "@kadira/storybook" "^2.35.3"
-    "@kadira/storybook-addon-knobs" "^1.7.1"
-    "@tdb/util" "1.2.4"
-    "@types/faker" "^4.1.0"
-    faker "^4.1.0"
-    react-inspector "^1.1.2"
-    shortid "^2.2.8"
-    storybook-host "^1.0.14"
-
-"@tdb/util@1.2.4", "@tdb/util@^1.0.72":
+"@tdb/util@^1.0.72":
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/@tdb/util/-/util-1.2.4.tgz#103d3a42584676753b6fe4b0d15c942890cb8db4"
   dependencies:
@@ -200,16 +187,6 @@
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/@types/chai/-/chai-3.5.1.tgz#9bd77fe12503ae00648b0945b38eab666adffe2e"
 
-"@types/dotenv@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@types/dotenv/-/dotenv-4.0.0.tgz#bd458844cb82ada047fa87a475270ad55492d2d4"
-  dependencies:
-    "@types/node" "*"
-
-"@types/faker@^4.1.0":
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/@types/faker/-/faker-4.1.0.tgz#751cd99436a71d7856f33f65f9c5e58e5bc2711e"
-
 "@types/graphql@^0.9.0":
   version "0.9.1"
   resolved "https://registry.yarnpkg.com/@types/graphql/-/graphql-0.9.1.tgz#b04ebe84bc997cc60dbea2ed4d0d4342c737f99d"
@@ -222,7 +199,7 @@
   version "2.2.41"
   resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-2.2.41.tgz#e27cf0817153eb9f2713b2d3f6c68f1e1c3ca608"
 
-"@types/node@*", "@types/node@7.0.13":
+"@types/node@7.0.13":
   version "7.0.13"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-7.0.13.tgz#1b0a53fe9ef9c3a5d061b126cc9b915bca43a3f5"
 
@@ -1754,10 +1731,6 @@ dot-prop@^3.0.0:
   dependencies:
     is-obj "^1.0.0"
 
-dotenv@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-4.0.0.tgz#864ef1379aced55ce6f95debecdce179f7a0cd1d"
-
 dynamics.js@^1.1.5:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/dynamics.js/-/dynamics.js-1.1.5.tgz#b90bdc33605cefe652b8416e701f79bf6eefce32"
@@ -1963,10 +1936,6 @@ extglob@^0.3.1:
 extsprintf@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.0.2.tgz#e1080e0658e300b06294990cc70e1502235fd550"
-
-faker@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/faker/-/faker-4.1.0.tgz#1e45bbbecc6774b3c195fad2835109c6d748cc3f"
 
 fast-levenshtein@~2.0.4:
   version "2.0.6"
@@ -3767,7 +3736,7 @@ react-docgen@^2.12.1:
     node-dir "^0.1.10"
     recast "^0.11.5"
 
-react-dom@15.5.4:
+react-dom@15.5.4, react-dom@^15.5.4:
   version "15.5.4"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.5.4.tgz#ba0c28786fd52ed7e4f2135fe0288d462aef93da"
   dependencies:
@@ -3788,7 +3757,7 @@ react-fuzzy@^0.3.3:
     classnames "^2.2.3"
     fuse.js "^2.2.0"
 
-react-inspector@^1.1.0, react-inspector@^1.1.2:
+react-inspector@^1.1.0:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/react-inspector/-/react-inspector-1.1.2.tgz#192bc54f2be44f9fa0f29f183386f7f6e380f5ec"
   dependencies:
@@ -3862,7 +3831,7 @@ react-textarea-autosize@^4.0.5:
   dependencies:
     prop-types "^15.5.8"
 
-react@15.5.4:
+react@15.5.4, react@^15.5.4:
   version "15.5.4"
   resolved "https://registry.yarnpkg.com/react/-/react-15.5.4.tgz#fa83eb01506ab237cdc1c8c3b1cea8de012bf047"
   dependencies:
@@ -4593,6 +4562,10 @@ typed-graphql@^1.0.2:
 typescript@2.2.2:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.2.2.tgz#606022508479b55ffa368b58fee963a03dfd7b0c"
+
+typescript@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.3.2.tgz#f0f045e196f69a72f06b25fd3bd39d01c3ce9984"
 
 ua-parser-js@^0.7.9:
   version "0.7.12"

@@ -5,31 +5,26 @@
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",
   "scripts": {
-    "ui": "start-storybook -p 3030 -c ./.storybook -s ./public",
+    "start": "start-storybook -p 3030 -c ./.storybook -s ./public",
     "build-storybook": "./node_modules/@kadira/storybook/dist/server/build.js -c ./.storybook -s ./public",
-    "start": "node .",
-    "watch": "nodemon . -e js --ignore src",
-    "test": "sh sh/test.sh",
-    "tdd": "yarn run test -- --reporter min --watch",
-    "lint": "tslint 'src/**/*.ts{,x}' --format verbose",
     "build": "rm -rf ./lib && tsc",
-    "prepublish": "yarn run lint && yarn test && yarn run build",
-    "snapshot": "node sh/env.js && build-storybook && echo '\n🤘  Go Percy\n' && percy-storybook --debug"
+    "snapshot": "build-storybook && percy-storybook --debug"
   },
   "dependencies": {
-    "@tdb/util": "^1.0.72"
+    "@tdb/util": "^1.0.72",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
   },
   "devDependencies": {
     "@kadira/storybook": "^2.35.3",
     "@percy-io/react-percy-storybook": "^0.1.6",
-    "@tdb/typescript": "^2.2.0",
-    "@tdb/ui.test": "^2.0.4",
-    "@types/dotenv": "^4.0.0",
-    "dotenv": "^4.0.0"
+    "@types/react-dom": "^15.5.0",
+    "storybook-host": "^1.0.14",
+    "typescript": "^2.3.2"
   },
   "repository": {
     "type": "git",
-    "url": "__GITHUB_URL__"
+    "url": "https://github.com/philcockfield/percy.sample"
   },
   "license": "UNLICENSED"
 }
