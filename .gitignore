@@ -5,7 +5,6 @@
 .next
 
 /dist
-/lib
 /TEMP.md
 /*.tgz
 
