@@ -1,15 +1,16 @@
 import { React, css } from '../../common';
 
-export interface IFooProps { }
+
+export interface IBarProps { }
 
 /**
- * primitive
+ * A sample Bar component.
  */
-export class Foo extends React.Component<IFooProps, void> {
+export class Bar extends React.Component<IBarProps, void> {
   public render() {
     return (
       <div {...styles.base}>
-        <h1>Hello Tim</h1>
+        Bar
       </div>
     );
   }
@@ -18,7 +19,6 @@ export class Foo extends React.Component<IFooProps, void> {
 
 const styles = {
   base: css({
-    padding: 30,
     backgroundColor: 'rgba(255, 0, 0, 0.1)', /* RED */
   }),
 };

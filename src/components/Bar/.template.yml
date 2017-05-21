@@ -1,0 +1,6 @@
+name: React Component - class
+folder: NAME
+variables:
+  NAME: Component name
+  DESCRIPTION: Description
+  NAMESPACE: Storybook namespace

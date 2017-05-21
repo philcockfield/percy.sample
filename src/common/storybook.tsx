@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { storiesOf, host, IHostProps, Story, knobs } from 'storybook-host';
 
+export { React }
 export { knobs } from 'storybook-host';
 
 
