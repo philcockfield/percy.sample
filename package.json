@@ -8,7 +8,7 @@
     "start": "start-storybook -p 3030 -c ./.storybook -s ./public",
     "build-storybook": "./node_modules/@kadira/storybook/dist/server/build.js -c ./.storybook -s ./public",
     "build": "rm -rf ./lib && ./node_modules/typescript/bin/tsc",
-    "snapshot": "npm run build && build-storybook && percy-storybook --debug"
+    "snapshot": "build-storybook && percy-storybook --debug"
   },
   "dependencies": {
     "@kadira/storybook-addons": "^1.6.1",
