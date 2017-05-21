@@ -20,7 +20,7 @@
     "@kadira/storybook": "^2.35.3",
     "@percy-io/react-percy-storybook": "^0.1.6",
     "@types/react-dom": "^15.5.0",
-    "storybook-host": "^1.0.14",
+    "storybook-host": "^1.1.0",
     "typescript": "^2.3.2"
   },
   "repository": {
