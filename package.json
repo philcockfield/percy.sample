@@ -5,7 +5,7 @@
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",
   "scripts": {
-    "storybook": "start-storybook -p 3030 -c ./.storybook -s ./public",
+    "ui": "start-storybook -p 3030 -c ./.storybook -s ./public",
     "build-storybook": "./node_modules/@kadira/storybook/dist/server/build.js -c ./.storybook -s ./public",
     "start": "node .",
     "watch": "nodemon . -e js --ignore src",
